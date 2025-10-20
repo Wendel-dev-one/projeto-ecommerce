@@ -223,7 +223,7 @@ function atualizarValorTotalDoCarrinho() {
     });
 
     const totalEl = document.querySelector('#total-carrinho');
-    if (totalEl) totalEl.textContent = `R$ ${formatarPrecoBrasileiro(total)}`;
+    if (totalEl) totalEl.textContent = `Total: R$ ${formatarPrecoBrasileiro(total)}`;
 }
 
 function atualizarCarrinhoETabela(){
