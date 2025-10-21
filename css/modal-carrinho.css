@@ -127,6 +127,95 @@ td .btn-remover {
     background-color: var(--cor-primaria-hover);
 }
 
+/*FRETE*/
+
+.container-preco-total {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+#subtotal-pedidos, #valor-frete {
+    color: var(--cor-cinza-claro-frete);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#valor-frete {
+    display: none;
+}
+
+#subtotal-pedidos .valor, #valor-frente .valor {
+    color: var(--cor-verde-agua-frete);
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+#total-carrinho {
+    color: var(--cor-verde-agua-frete);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    display: block;
+    text-align: right;
+}
+
+#input-cep {
+    padding: 8px 12px;
+    width: 100%;
+    max-width: 220px;
+    border: 1px solid var(--cor-verde-agua-frete);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--cor-verde-agua-frete);
+    font-size: 1rem;
+    font-weight: 400;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+#input-cep::placeholder {
+    color: var(--cor-verde-agua-frete);
+    opacity: 0.5;
+    font-weight: 400;
+}
+
+#btn-calcular-frete {
+    padding: 8px 20px;
+    border: 1px solid var(--cor-verde-agua-frete);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--cor-verde-agua-frete);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    outline: none;
+}
+
+#btn-calcular-frete:hover,
+#btn-calcular-frete:focus {
+    background-color: var(--cor-verde-agua-frete);
+    color: #1a1a2e;
+}
+
+.container-cep-frete {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+    gap: 8px;
+}
+
+.container-cep-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+}
+
 /*Versão desktop*/
 
 @media (min-width: 769px) {
