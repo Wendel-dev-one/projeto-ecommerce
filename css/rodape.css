@@ -1,14 +1,16 @@
 .rodape {
     grid-area: footer;
-    background-color: var(--cor-cinza-escuro);
+    background-color: var(--cor-cinza-escura);
 }
 
-.rodape .container-footer {
+.rodape .container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 1rem;
     padding: 1.5rem;
 }
+
 .rodape nav h3 {
     color: var(--cor-neutra-clara);
     font-size: 1.2rem;
@@ -17,8 +19,8 @@
 }
 
 .rodape nav ul li {
-    margin-bottom: 0.7rem;
-    color: var(--cor-roxa-clara);
+    margin-bottom: 0.7rem; 
+    color: var(--cor-roxa-clara);   
 }
 
 .rodape nav a {
@@ -40,20 +42,18 @@
     letter-spacing: 0.1rem;
 }
 
-@media (min-width: 1024px) {
-    .rodape .container-footer {
+@media(min-width: 1024px) {
+    .rodape .container {
         flex-direction: row;
         width: 100%;
         gap: 13rem;
         padding: 4rem 1rem;
-    }
+    } 
 }
 
-@media (min-width: 1120px) {
-    .rodape .container-footer {
+@media(min-width: 1120px) {
+    .rodape .container {
         width: 1170px;
-        justify-content: space-between;
-        text-align: center;
         margin: 0 auto;
     }
 }

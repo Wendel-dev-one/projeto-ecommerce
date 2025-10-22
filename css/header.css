@@ -18,15 +18,13 @@
     flex-direction: column;
     gap: 2rem;
     padding: 1rem 0;
-    
 }
 
-.cabecalho .menu-principal ul li a {
+.cabecalho ul li a {
     color: var(--cor-neutra-clara);
     letter-spacing: 0.1rem;
     text-decoration: none;
     padding: 1rem;
-    border-radius: 25px;
 }
 
 .cabecalho ul li a:hover {
@@ -71,14 +69,14 @@
 }
 
 .botao-carrinho {
-    background-color: transparent;
-    border: 0;
-    padding: 0.75rem;
-    position: relative;
-    cursor: pointer;
+   background-color: transparent;
+   border: 0;
+   padding: 0.75rem;
+   position: relative;
+   cursor: pointer;
 }
 
-.botao-carrinho span{
+.botao-carrinho span {
     background-color: var(--cor-primaria);
     color: var(--cor-neutra-clara);
     font-weight: 600;
@@ -95,8 +93,7 @@
     border-radius: 50%;
 }
 
-@media (min-width: 940px) {
-
+@media(min-width: 940px) {
     .cabecalho .menu-principal {
         display: block;
         position: static;
@@ -105,19 +102,22 @@
 
     .cabecalho .menu-principal ul {
         flex-direction: row;
-        gap: 1rem;
     }
 
     .menu-hamburguer {
         display: none;
     }
 
-    .cabecalho .menu-principal ul li a {
+    .cabecalho .menu-principal ul {
+        gap: 1rem;
+    }
+
+    .cabecalho ul li a {
         font-size: 0.85rem;
     }
 }
 
-@media (min-width: 1170px) {
+@media(min-width: 1170px) {
     .cabecalho {
         max-width: 1170px;
         margin: 0 auto;
@@ -127,7 +127,7 @@
         gap: 2rem;
     }
 
-    .cabecalho .menu-principal ul li a {
+    .cabecalho ul li a {
         font-size: 1rem;
     }
 }
